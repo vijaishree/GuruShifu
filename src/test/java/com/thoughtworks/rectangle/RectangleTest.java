@@ -12,7 +12,8 @@ public class RectangleTest{
     @Test
     void shouldReturnAreaOfTwentyWhenLengthIsFourAndBreadthIsFive(){
         Rectangle area = new Rectangle();
-        area.computeArea(4, 5);
+        boolean success = area.computeArea(4, 5);
+        assertThat(success , equalTo(true));
         int actualArea = area.returnArea();
         int expectedArea = 4*5;
         assertThat(actualArea , equalTo(expectedArea)) ;
