@@ -1,14 +1,14 @@
 package com.thoughtworks.rectangle;
 
 class Rectangle {
-    private final int length ;
-    private final int breadth;
-    Rectangle(int length , int breadth){
+    private final double length ;
+    private final double breadth;
+    Rectangle(double length , double breadth){
         this.length = length;
         this.breadth = breadth;
     }
-    public int area() {
-        int areaOfRectangle = length * breadth ;
+    public double area() {
+        double areaOfRectangle = length * breadth ;
         return areaOfRectangle;
     }
     
