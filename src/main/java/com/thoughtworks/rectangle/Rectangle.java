@@ -11,6 +11,10 @@ class Rectangle {
         double areaOfRectangle = length * breadth ;
         return areaOfRectangle;
     }
+    public double perimeter() {
+        double perimeterOfRectangle = 2*(length+breadth);
+        return perimeterOfRectangle;
+    }
     
     
 }
