@@ -1,13 +1,16 @@
 package com.thoughtworks.rectangle;
 
 class Rectangle {
-    int area;
-    public boolean computeArea(int length, int breadth) {
-        area = length * breadth ;
-        return true;
+    private final int length ;
+    private final int breadth;
+    Rectangle(int length , int breadth){
+        this.length = length;
+        this.breadth = breadth;
     }
-    public int returnArea(){
-        return area;
+    public int area() {
+        int areaOfRectangle = length * breadth ;
+        return areaOfRectangle;
     }
+    
     
 }
